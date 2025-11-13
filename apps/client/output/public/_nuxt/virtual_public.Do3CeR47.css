@@ -1,0 +1,11 @@
+.glimmer[data-v-f344293f] {
+  animation: shimmer-f344293f 2s infinite;
+  background: linear-gradient(-45deg, gold 40%, #fafafa, gold 60%);
+  background-position-x: 100%;
+  background-size: 300%;
+}
+@keyframes shimmer-f344293f {
+  to {
+    background-position-x: 0;
+  }
+}

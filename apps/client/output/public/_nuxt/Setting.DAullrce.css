@@ -1,0 +1,19 @@
+.btn-outline.btn-secondary[data-v-8308af9e]:hover,
+.btn[data-v-8308af9e]:is(input[type="radio"]:checked),
+.toggle-secondary[data-v-8308af9e]:checked {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 70 239 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.btn-outline.btn-secondary[data-v-8308af9e] {
+  --tw-text-opacity: 1;
+  color: rgb(217 70 239 / var(--tw-text-opacity));
+  outline-color: #d946ef;
+}
+section > h2[data-v-8308af9e] {
+  border-bottom-width: 1px;
+  padding-bottom: 1rem;
+}
