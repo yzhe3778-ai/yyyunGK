@@ -1,6 +1,6 @@
 {
   "buildCommand": "echo 'Build completed'",
-  "outputDirectory": "apps/client/.output/public",
+  "outputDirectory": "apps/client/output/public",
   "framework": "nuxtjs",
   "env": {
     "NITRO_PRESET": "static"
