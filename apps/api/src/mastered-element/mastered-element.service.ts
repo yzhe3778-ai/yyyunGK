@@ -26,8 +26,7 @@ export class MasteredElementService {
       .values({
         userId,
         content: JSON.stringify(content),
-        masteredAt: new Date(),
-      })
+      } as typeof masteredElementsSchema.$inferInsert)
       .returning();
 
     entity.content = JSON.parse(entity.content as string);

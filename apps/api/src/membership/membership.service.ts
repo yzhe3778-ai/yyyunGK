@@ -41,13 +41,17 @@ export class MembershipService {
           start_date: startDate,
           end_date: endDate,
           isActive: true,
-        });
+        } as typeof membership.$inferInsert);
 
         this.logger.log(`Membership for user ${userId} has been created`);
       } else {
         await this.db
           .update(membership)
-          .set({ end_date: endDate, isActive: true, start_date: startDate })
+          .set({
+            end_date: endDate,
+            isActive: true,
+            start_date: startDate,
+          } as Partial<typeof membership.$inferInsert>)
           .where(eq(membership.userId, userId));
 
         this.logger.log(`Membership for user ${userId} has been updated`);
@@ -117,7 +121,7 @@ export class MembershipService {
         .update(membership)
         .set({
           isActive: false,
-        })
+        } as Partial<typeof membership.$inferInsert>)
         .where(and(eq(membership.isActive, true), lt(membership.end_date, currentDate)));
 
       this.logger.log(`Deactivated expired memberships`);

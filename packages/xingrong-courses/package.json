@@ -8,14 +8,19 @@
     "course:add": "tsx src/addCourse.ts",
     "course:reset": "tsx src/resetCourseStatements.ts",
     "pdf:parse": "tsx src/parsePDF/index.ts",
+    "course:template": "tsx src/generateTemplate.ts",
+    "course:excel2json": "tsx src/excel2json.ts",
+    "course:create-pack": "tsx src/createCoursePack.ts",
     "test": "vitest"
   },
   "dependencies": {
     "@earthworm/db": "workspace:^",
     "@earthworm/schema": "workspace:^",
+    "@types/node": "^20.19.25",
     "drizzle-orm": "^0.32.0",
     "inquirer": "^9.2.13",
-    "pdf-parse": "^1.1.1"
+    "pdf-parse": "^1.1.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.7",

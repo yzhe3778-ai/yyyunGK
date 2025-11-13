@@ -1,5 +1,5 @@
 import { BadRequestException, Inject, Injectable } from "@nestjs/common";
-import { and, eq, gte, lte, sql, sum } from "drizzle-orm";
+import { and, eq, gte, lte, SQL, sql, sum } from "drizzle-orm";
 
 import { userLearningActivities as userLearningActivitiesSchema } from "@earthworm/schema";
 import { DB, DbType } from "../global/providers/db.provider";
@@ -30,7 +30,7 @@ export class UserLearningActivityService {
         duration,
         courseId,
         metadata,
-      })
+      } as typeof userLearningActivitiesSchema.$inferInsert)
       .onConflictDoUpdate({
         target: [
           userLearningActivitiesSchema.userId,
@@ -43,6 +43,10 @@ export class UserLearningActivityService {
             ? sql`${userLearningActivitiesSchema.metadata} || ${JSON.stringify(metadata)}::jsonb`
             : undefined,
           updatedAt: new Date(),
+        } as unknown as Partial<typeof userLearningActivitiesSchema.$inferInsert> & {
+          duration: SQL<number>;
+          metadata?: SQL<unknown>;
+          updatedAt: Date;
         },
       });
 

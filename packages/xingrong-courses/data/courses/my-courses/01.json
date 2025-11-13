@@ -1,0 +1,52 @@
+[
+	{
+		"chinese": "你好",
+		"english": "Hello",
+		"soundmark": "/həˈloʊ/"
+	},
+	{
+		"chinese": "世界",
+		"english": "world",
+		"soundmark": "/wɜːrld/"
+	},
+	{
+		"chinese": "你好世界",
+		"english": "Hello world",
+		"soundmark": "/həˈloʊ/ /wɜːrld/"
+	},
+	{
+		"chinese": "我",
+		"english": "I",
+		"soundmark": "/aɪ/"
+	},
+	{
+		"chinese": "喜欢",
+		"english": "like",
+		"soundmark": "/laɪk/"
+	},
+	{
+		"chinese": "我喜欢",
+		"english": "I like",
+		"soundmark": "/aɪ/ /laɪk/"
+	},
+	{
+		"chinese": "学习",
+		"english": "to learn",
+		"soundmark": "/tə/ /lɜːrn/"
+	},
+	{
+		"chinese": "英语",
+		"english": "English",
+		"soundmark": "/ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "学习英语",
+		"english": "to learn English",
+		"soundmark": "/tə/ /lɜːrn/ /ˈɪŋɡlɪʃ/"
+	},
+	{
+		"chinese": "我喜欢学习英语",
+		"english": "I like to learn English",
+		"soundmark": "/aɪ/ /laɪk/ /tə/ /lɜːrn/ /ˈɪŋɡlɪʃ/"
+	}
+]
